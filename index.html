@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>نسمة المعصار | مطورة Full-Stack & AI</title>
+  <meta name="description" content="ملف نسمة عبدالله المعصار - مهندسة تقنية معلومات متخصصة في Flutter وLaravel والذكاء الاصطناعي" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<nav id="navbar">
+  <div class="nav-container">
+    <div class="nav-logo">
+      <span class="logo-text">NA</span>
+      <span class="logo-name">نسمة المعصار</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero">الرئيسية</a></li>
+      <li><a href="#skills">المهارات</a></li>
+      <li><a href="#projects">المشاريع</a></li>
+      <li><a href="#education">التعليم</a></li>
+      <li><a href="#contact">التواصل</a></li>
+    </ul>
+    <div style="display: flex; gap: 0.5rem; align-items: center;">
+      <button class="theme-btn" id="themeBtn" onclick="toggleTheme()" title="تبديل المظهر">☀️</button>
+      <button class="lang-btn" id="langBtn" onclick="toggleLang()">EN</button>
+    </div>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section id="hero">
+  <div class="hero-bg">
+    <div class="blob blob1"></div>
+    <div class="blob blob2"></div>
+    <div class="blob blob3"></div>
+    <div class="particles" id="particles"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="badge-dot"></span>
+      <span id="hero-badge-text">متاحة للعمل</span>
+    </div>
+    <h1 class="hero-name" id="hero-name">نسمة عبدالله المعصار</h1>
+    <p class="hero-title" id="hero-title">
+      <span class="typing-text" id="typingText"></span><span class="cursor">|</span>
+    </p>
+    <p class="hero-desc" id="hero-desc">
+      مهندسة تقنية معلومات خريجة جامعة صنعاء بمرتبة الشرف (95%)، متخصصة في بناء الحلول البرمجية المتكاملة، ودمج تقنيات الذكاء الاصطناعي لتحويل الأفكار إلى تطبيقات ذكية وتفاعلية.
+    </p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-primary" id="hero-btn1">استعرض أعمالي</a>
+      <a href="#contact" class="btn btn-outline" id="hero-btn2">تواصل معي</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-num">95%</span><span class="stat-label" id="stat1">المعدل التراكمي</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num">5+</span><span class="stat-label" id="stat2">مشاريع منجزة</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num">8+</span><span class="stat-label" id="stat3">شهادات مهنية</span></div>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="avatar-ring">
+      <div class="avatar-inner">
+        <div class="avatar-initials">NM</div>
+      </div>
+      <div class="ring ring1"></div>
+      <div class="ring ring2"></div>
+      <div class="tech-chips">
+        <div class="chip chip1">Flutter</div>
+        <div class="chip chip2">Laravel</div>
+        <div class="chip chip3">GenAI</div>
+        <div class="chip chip4">MySQL</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section id="skills">
+  <div class="section-container">
+    <div class="section-header">
+      <span class="section-tag" id="skills-tag">المهارات</span>
+      <h2 class="section-title" id="skills-title">الخبرات التقنية</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card" data-aos>
+        <div class="skill-icon">📱</div>
+        <h3 id="sk1-title">تطوير تطبيقات الموبايل</h3>
+        <p>Flutter (Android & iOS)</p>
+        <div class="skill-bar"><div class="skill-fill" style="width:92%"></div></div>
+      </div>
+      <div class="skill-card" data-aos>
+        <div class="skill-icon">⚙️</div>
+        <h3 id="sk2-title">برمجة الويب والخلفية</h3>
+        <p>Laravel Framework, PHP, RESTful APIs</p>
+        <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+      </div>
+      <div class="skill-card" data-aos>
+        <div class="skill-icon">🤖</div>
+        <h3 id="sk3-title">الذكاء الاصطناعي</h3>
+        <p>Google Gemini GenAI, Python, Data Mining</p>
+        <div class="skill-bar"><div class="skill-fill" style="width:82%"></div></div>
+      </div>
+      <div class="skill-card" data-aos>
+        <div class="skill-icon">🗄️</div>
+        <h3 id="sk4-title">إدارة قواعد البيانات</h3>
+        <p>MySQL, SQL Server, Oracle</p>
+        <div class="skill-bar"><div class="skill-fill" style="width:88%"></div></div>
+      </div>
+      <div class="skill-card" data-aos>
+        <div class="skill-icon">💻</div>
+        <h3 id="sk5-title">لغات البرمجة</h3>
+        <p>Dart, Python, C#, C++, JavaScript</p>
+        <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+      </div>
+      <div class="skill-card" data-aos>
+        <div class="skill-icon">🎨</div>
+        <h3 id="sk6-title">التصميم</h3>
+        <p>UI/UX Design, HTML5, CSS3, Figma</p>
+        <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+      </div>
+    </div>
+
+    <div class="soft-skills" id="soft-skills-section">
+      <h3 id="soft-title">المهارات الشخصية</h3>
+      <div class="soft-tags">
+        <span class="soft-tag" id="ss1">حل المشكلات المعقدة</span>
+        <span class="soft-tag" id="ss2">التفكير النقدي</span>
+        <span class="soft-tag" id="ss3">العمل عن بُعد</span>
+        <span class="soft-tag" id="ss4">إدارة الوقت</span>
+        <span class="soft-tag" id="ss5">العمل الجماعي</span>
+        <span class="soft-tag" id="ss6">المرونة والتكيف</span>
+        <span class="soft-tag" id="ss7">البحث الأكاديمي</span>
+        <span class="soft-tag" id="ss8">التعلم الذاتي</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section id="projects">
+  <div class="section-container">
+    <div class="section-header">
+      <span class="section-tag" id="proj-tag">المشاريع</span>
+      <h2 class="section-title" id="proj-title">أبرز الأعمال</h2>
+    </div>
+
+    <!-- Project 1: MealMate -->
+    <div class="project-card featured" data-aos>
+      <div class="project-images-slider" id="slider1">
+        <div class="slides-track" id="track1">
+          <img src="photo/mealmate.png" alt="MealMate" />
+          <img src="photo/mealmate1.png" alt="MealMate 1" />
+          <img src="photo/mealmate2.png" alt="MealMate 2" />
+          <img src="photo/mealmate3.png" alt="MealMate 3" />
+          <img src="photo/mealmate4.png" alt="MealMate 4" />
+          <img src="photo/mealmate5.png" alt="MealMate 5" />
+          <img src="photo/mealmate6.png" alt="MealMate 6" />
+        </div>
+        <button class="slide-btn prev" onclick="slide('track1',-1)">‹</button>
+        <button class="slide-btn next" onclick="slide('track1',1)">›</button>
+        <div class="slide-dots" id="dots1"></div>
+      </div>
+      <div class="project-info">
+        <div class="project-badge featured-badge" id="feat-badge">مشروع التخرج ⭐</div>
+        <h3 class="project-name">MealMate</h3>
+        <p class="project-subtitle" id="mm-sub">الرفيق الذكي لحياة صحية</p>
+        <p class="project-desc" id="mm-desc">
+          منصة متكاملة تجمع Flutter وLaravel مع دمج Google Gemini GenAI لتحليل البيانات الصحية وتوليد خطط غذائية مخصصة آنياً. تضم لوحات تحكم متعددة المستويات للمشرفين والأخصائيين والتجار.
+        </p>
+        <div class="tech-stack">
+          <span class="tech-tag">Flutter</span>
+          <span class="tech-tag">Laravel</span>
+          <span class="tech-tag">Google Gemini</span>
+          <span class="tech-tag">MySQL</span>
+          <span class="tech-tag">RESTful APIs</span>
+          <span class="tech-tag">Figma</span>
+        </div>
+        <div class="project-links">
+          <a href="http://mealmate.infinityfreeapp.com" target="_blank" class="link-btn primary" id="mm-link">🌐 عرض المشروع</a>
+          <a href="https://github.com/NesmaAlmeasar/mealmate.git" target="_blank" class="link-btn secondary" style="display:flex;align-items:center;gap:6px;">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            <span class="gh-text">عرض الكود</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 2: Honey Store -->
+    <div class="project-card" data-aos>
+      <div class="project-images-slider" id="slider2">
+        <div class="slides-track" id="track2">
+          <img src="photo/hony.png" alt="Honey Store" />
+          <img src="photo/hony1.png" alt="Honey 1" />
+          <img src="photo/hony2.png" alt="Honey 2" />
+          <img src="photo/hony3.png" alt="Honey 3" />
+          <img src="photo/hony4.png" alt="Honey 4" />
+          <img src="photo/hony5.png" alt="Honey 5" />
+        </div>
+        <button class="slide-btn prev" onclick="slide('track2',-1)">‹</button>
+        <button class="slide-btn next" onclick="slide('track2',1)">›</button>
+        <div class="slide-dots" id="dots2"></div>
+      </div>
+      <div class="project-info">
+        <h3 class="project-name" id="hn-title">متجر محمد المعصار للعسل اليمني</h3>
+        <p class="project-desc" id="hn-desc">
+          منصة تجارة إلكترونية متكاملة وعالية الأداء للعسل اليمني والتوابل الأصيلة. تتضمن ميزة تفاعلية لترشيح أنواع العسل حسب الاحتياجات الصحية والغذائية للعملاء، مع ربط احترافي ببوابات الدفع الإلكتروني.
+        </p>
+        <div class="tech-stack">
+          <span class="tech-tag">Laravel</span>
+          <span class="tech-tag">MySQL</span>
+          <span class="tech-tag">JavaScript</span>
+          <span class="tech-tag">Tailwind CSS</span>
+          <span class="tech-tag">RESTful APIs</span>
+        </div>
+        <div class="project-links">
+          <a href="https://mohammedalmeasar.com" target="_blank" class="link-btn primary" id="hn-link">🌐 عرض المشروع</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects row: MyDental + Smart Note + OrderMeals -->
+    <div class="projects-row">
+      <div class="project-card mini" data-aos>
+        <div class="project-images-slider mini-slider">
+          <div class="slides-track" id="track3">
+            <img src="photo/mydental 1.png" alt="MyDental" />
+            <img src="photo/mydental2 .png" alt="MyDental 2" />
+          </div>
+          <button class="slide-btn prev" onclick="slide('track3',-1)">‹</button>
+          <button class="slide-btn next" onclick="slide('track3',1)">›</button>
+        </div>
+        <div class="project-info">
+          <h3 class="project-name">MyDental</h3>
+          <p class="project-desc" id="dn-desc">واجهة أمامية احترافية لعيادة أسنان — صفحة هبوط عربية نظيفة وسريعة بدون مكتبات معقدة.</p>
+          <div class="tech-stack">
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+          </div>
+          <a href="https://github.com/NesmaAlmeasar/DENTALnesmaalmeasar.github.io.git" target="_blank" class="link-btn secondary" style="display:flex;align-items:center;gap:6px;">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            <span class="gh-text">عرض الكود</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card mini" data-aos>
+        <div class="project-images-slider mini-slider">
+          <div class="slides-track" id="track4">
+            <img src="photo/mysmartnot.png" alt="My Smart Note 1" />
+            <img src="photo/mysmartnot2.png" alt="My Smart Note 2" />
+          </div>
+          <button class="slide-btn prev" onclick="slide('track4',-1)">‹</button>
+          <button class="slide-btn next" onclick="slide('track4',1)">›</button>
+        </div>
+        <div class="project-info">
+          <h3 class="project-name" id="sn-title">مفكرتي الذكية</h3>
+          <p class="project-desc" id="sn-desc">نموذج أولي لتطبيق إدارة المهام اليومية بواجهة مستخدم بصرية محفِّزة للإنتاجية، مع دعم الوضع الليلي والنهاري.</p>
+          <div class="tech-stack">
+            <span class="tech-tag">Adobe XD</span>
+            <span class="tech-tag">UI/UX</span>
+          </div>
+          <a href="https://github.com/NesmahAlmeasar/MySmartnote.git" target="_blank" class="link-btn secondary" style="display:flex;align-items:center;gap:6px;">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            <span class="gh-text">عرض الكود</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card mini" data-aos>
+        <div class="mini-icon-box">
+          <div class="mini-icon">🍽️</div>
+        </div>
+        <div class="project-info">
+          <h3 class="project-name" id="om-title">OrderMeals</h3>
+          <p class="project-desc" id="om-desc">تطبيق سطح مكتب لإدارة الحميات الغذائية يتيح تصفية وطلب الوجبات حسب المتطلبات الصحية مع تتبع الطلبات.</p>
+          <div class="tech-stack">
+            <span class="tech-tag">C# .NET</span>
+            <span class="tech-tag">SQL Server</span>
+          </div>
+          <a href="https://github.com/NesmaAlmeasar/MealMateApp.git" target="_blank" class="link-btn secondary" style="display:flex;align-items:center;gap:6px;">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            <span class="gh-text">عرض الكود</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== EDUCATION & CERTS ===== -->
+<section id="education">
+  <div class="section-container">
+    <div class="section-header">
+      <span class="section-tag" id="edu-tag">التعليم</span>
+      <h2 class="section-title" id="edu-title">التعليم والشهادات</h2>
+    </div>
+    <div class="edu-grid">
+      <div class="edu-card main-edu" data-aos>
+        <div class="edu-icon">🎓</div>
+        <div class="edu-content">
+          <h3 id="edu-degree">بكالوريوس تقنية معلومات</h3>
+          <p class="edu-uni" id="edu-uni">جامعة صنعاء — كلية الحاسوب</p>
+          <p class="edu-year">2025 – 2026</p>
+          <div class="edu-badge" id="edu-badge">خريجة بمرتبة الشرف | المعدل: 95%</div>
+        </div>
+      </div>
+
+      <div class="certs-grid">
+        <div class="cert-card" data-aos><span class="cert-icon">🤖</span><span id="c1">دورة الذكاء الاصطناعي المكثفة — جامعة صنعاء</span></div>
+        <div class="cert-card" data-aos><span class="cert-icon">⚙️</span><span id="c2">دورة Laravel المتقدمة — جامعة صنعاء</span></div>
+        <div class="cert-card" data-aos><span class="cert-icon">📡</span><span id="c3">شهادة تدريب ميداني — سبأفون للاتصالات</span></div>
+        <div class="cert-card" data-aos><span class="cert-icon">🏦</span><span id="c4">شهادة مهنية — بنك التسليف الزراعي CAC</span></div>
+        <div class="cert-card" data-aos><span class="cert-icon">🏦</span><span id="c5">شهادة مهنية — بنك اليمن والكويت YKB</span></div>
+        <div class="cert-card" data-aos><span class="cert-icon">👥</span><span id="c6">شهادة HRMS — إبداع سوفت</span></div>
+        <div class="cert-card" data-aos><span class="cert-icon">🔒</span><span id="c7">مقدمة الأمن السيبراني — Cisco</span></div>
+        <div class="cert-card" data-aos><span class="cert-icon">📜</span><span id="c8">دبلوم إدارة تقنية المعلومات — Alison</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact">
+  <div class="section-container">
+    <div class="section-header">
+      <span class="section-tag" id="con-tag">التواصل</span>
+      <h2 class="section-title" id="con-title">هل لديك مشروع؟ لنتحدث!</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card" data-aos>
+        <a href="mailto:nesmaalmeasar@gmail.com" id="email-link" class="contact-item">
+          <div class="contact-icon">✉️</div>
+          <div>
+            <p class="contact-label" id="con-email-label">البريد الإلكتروني</p>
+            <p class="contact-value">nesmaalmeasar@gmail.com</p>
+          </div>
+        </a>
+        <a href="tel:+967715771577" class="contact-item">
+          <div class="contact-icon">📞</div>
+          <div>
+            <p class="contact-label" id="con-phone-label">الهاتف</p>
+            <p class="contact-value">+967 715 771 577</p>
+          </div>
+        </a>
+        <a href="https://github.com/NesmaAlmeasar" target="_blank" class="contact-item">
+          <div class="contact-icon">💻</div>
+          <div>
+            <p class="contact-label">GitHub</p>
+            <p class="contact-value">NesmaAlmeasar</p>
+          </div>
+        </a>
+        <div class="contact-item no-link">
+          <div class="contact-icon">📍</div>
+          <div>
+            <p class="contact-label" id="con-loc-label">الموقع</p>
+            <p class="contact-value" id="con-loc">صنعاء، اليمن</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="footer-content">
+    <p id="footer-text">© 2026 نسمة عبدالله المعصار — صُنع بـ ❤️ وشغف بالكود</p>
+    <div class="footer-links">
+      <a href="mailto:nesmaalmeasar@gmail.com">✉️</a>
+      <a href="https://github.com/NesmaAlmeasar" target="_blank">💻</a>
+      <a href="tel:+967715771577">📞</a>
+    </div>
+  </div>
+</footer>
+
+<button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<script src="main.js"></script>
+</body>
+</html>
